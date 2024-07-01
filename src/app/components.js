@@ -42,7 +42,7 @@ export default function Form(){
                 id="Name"
                 name="Name"
                 className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
-                placeholder="name"
+                placeholder="Name"
 
                 />
             </div>
@@ -59,7 +59,7 @@ export default function Form(){
                 id="Number"
                 name="Number"
                 className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
-                placeholder="phone number"
+                placeholder="Phone Number"
                 />
             </div>
             <div className="my-5">
@@ -74,7 +74,7 @@ export default function Form(){
                 id="Age"
                 name="Age"
                 className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
-                placeholder="age"
+                placeholder="Age"
                 />
             </div>
             <div className=" my-5">

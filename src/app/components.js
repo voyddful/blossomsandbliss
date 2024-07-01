@@ -3,22 +3,23 @@ import * as React from 'react';
 
 export function handle(){
     React.useEffect(() => {
-         window.addEventListener("load", function() {
-    const form = document.getElementById('my-form');
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      const data = new FormData(form);
-      const action = e.target.action;
-      fetch(action, {
-        method: 'POST',
-        body: data,
-      })
-      .then(() => {   
-        
-        document.getElementById('my-form').reset();
-      })
-    });
-  });
+        window.addEventListener("load", function() {
+          const form = document.getElementById('my-form');
+          form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+              method: 'POST',
+              body: data,
+            })
+            .then(() => {   
+              
+              document.getElementById('my-form').reset();
+              document.getElementById('but').innerHTML = "Submitted!"
+            })
+          });
+        });
     })
    
     
@@ -27,7 +28,7 @@ export function handle(){
 
 export default function Form(){
     return(
-        <form method='post' onSubmit={handle()} id="my-form" action="https://script.google.com/macros/s/AKfycbz0naa-n3CIewNUnTzyI5jCQO7QhYMcq5445akVVcfKjqP8gD2frg7r3EBgbY1YZFwF5A/exec" className="max-w-3xl lg:grid lg:grid-cols-4 lg:gap-8 mx-auto">
+        <form method="POST" onSubmit={handle()} id="my-form" action="https://script.google.com/macros/s/AKfycbznHshyexexv8xelQMpy8Cs3D8hges5JMN-0NSG6u6H1bLyTn3Pk-Qe7PjI8SgF3Rxvcw/exec">
             <field name="name">
             <div className=" my-5">
                 <label
@@ -78,6 +79,7 @@ export default function Form(){
             </div>
             <button 
             type="submit"
+            id="but"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
                 

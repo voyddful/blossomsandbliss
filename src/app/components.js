@@ -77,6 +77,21 @@ export default function Form(){
                 placeholder="age"
                 />
             </div>
+            <div className=" my-5">
+                <label
+                htmlFor="password"
+                className="block mb-2 text-sm font-medium text-gray-900"
+                >
+                Allergies
+                </label>
+                <input
+                type={"text"}
+                id="Allergies"
+                name="Allergies"
+                className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
+                placeholder="phone number"
+                />
+            </div>
             <button 
             type="submit"
             id="but"

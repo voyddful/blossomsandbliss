@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en"className="h-screen ">
       <head>
+        <link rel="icon" type="image/x-icon" href="/Logo.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

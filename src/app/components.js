@@ -29,7 +29,6 @@ export function handle(){
 export default function Form(){
     return(
         <form method="POST" onSubmit={handle()} id="my-form" action="https://script.google.com/macros/s/AKfycbznHshyexexv8xelQMpy8Cs3D8hges5JMN-0NSG6u6H1bLyTn3Pk-Qe7PjI8SgF3Rxvcw/exec">
-            <field name="name">
             <div className=" my-5">
                 <label
                 htmlFor="name"
@@ -46,7 +45,6 @@ export default function Form(){
 
                 />
             </div>
-            </field>
             <div className=" my-5">
                 <label
                 htmlFor="password"
@@ -90,6 +88,36 @@ export default function Form(){
                 name="Allergies"
                 className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
                 placeholder="Allergies"
+                />
+            </div>
+            <div className=" my-5">
+                <label
+                htmlFor="password"
+                className="block mb-2 text-base font-medium text-gray-900"
+                >
+                Share your <span className='font-bold text-yellow-100'>Memories</span> with Alexus (Be mindful, memories will be shared at the function!)
+                </label>
+                <textarea
+                type={"text"}
+                id="Memories"
+                name="Memories"
+                className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
+                placeholder="Memories"
+                />
+            </div>
+            <div className=" my-5">
+                <label
+                htmlFor="password"
+                className="block mb-2 text-base font-medium text-gray-900"
+                >
+                Any Questions?
+                </label>
+                <input
+                type={"text"}
+                id="Questions"
+                name="Questions"
+                className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
+                placeholder="Questions?"
                 />
             </div>
             <button 

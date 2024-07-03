@@ -95,14 +95,14 @@ export default function Form(){
                 htmlFor="password"
                 className="block mb-2 text-base font-medium text-gray-900"
                 >
-                Share your <span className='font-bold text-yellow-100'>Memories</span> with Alexus (Be mindful, memories will be shared at the function!)
+                Memories
                 </label>
                 <textarea
                 type={"text"}
                 id="Memories"
                 name="Memories"
                 className=" bg-pink-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full p-2.5 "
-                placeholder="Memories"
+                placeholder="Please share an experience you have shared with Alexus. (Be mindful, memories will be shared at the function!)"
                 />
             </div>
             <div className=" my-5">

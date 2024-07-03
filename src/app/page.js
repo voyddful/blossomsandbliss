@@ -6,7 +6,7 @@ export default function page(){
     <main className=' my-auto  text-black' >
       
       {/*mobile version*/}
-      <section className=" justify-center items-center flex min-h-screen p-8 bg-white bg-cover bg-right xl:bg-top xl:bg-cover bg-[url('/blossomsv2.png')] lg:bg-[url('/blissv2.png')]" >
+      <section className=" justify-center items-center flex min-h-screen p-8 bg-white bg-cover bg-right  xl:bg-cover bg-[url('/blossomsv2.png')] lg:bg-[url('/blissv2.png')]" >
         <div className=" text-center text-black max-w-7xl">
           <div className='mx-auto overflow-auto rounded-2xl bg-orange-400/70 h-max p-5 my-auto grid'>
             <h1 className=' text-lg mb-4 playwrite-no-100' id="test "><span className='text-2xl'>Blossoms And Bliss:</span><br/> An Evening Blooming with Elegance and Joy</h1>

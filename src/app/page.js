@@ -17,6 +17,7 @@ export default function page(){
             <h3 className='text-sm font-bold'>We Kindly Ask That You Arrive On Time.</h3>
 
             <h1 className='text-3xl my-6'>RSVP Here:</h1>
+            <h1 className='text-sm'>(To RSVP multiple people, wait for the textboxes to reset after hitting submit to start a new form.)</h1>
            
             <Form/>
             
